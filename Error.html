@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WARNING!</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 5vh 5vw;
+        background: black;
+        overflow: hidden;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      p {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 4.1vh;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        color: limegreen;
+        text-shadow: 0 0 10px limegreen;
+      }
+      .msg {
+        font-family: monospace;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 5vh;
+        padding-top: 5vh;
+        background: red;
+        box-shadow: 0 0 30px red;
+        text-shadow: 0 0 20px white;
+        color: white;
+        width: 40vh;
+        height: 15vh;
+        position: absolute;
+        left: 50%;
+        margin-left: -20vw;
+        top: 50%;
+        margin-top: -5vh;
+        min-width: 500px;
+        text-align: center;
+        animation-name: blink;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        border-radius: 50%;
+        border: 2px white solid;
+      }
+      @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="msg">404 ERROR-CODE!</div>
+    <div id="console"></div>
+    <marquee behavior="scroll" direction="up" scrollamount="3">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        <br />========================= <br />Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Placeat, quod? yang .
+
+        <br />=============================== =================
+        <br /><br />Lorem ipsum dolor sit amet. ===================Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Reiciendis,
+        blanditiis.=====================
+
+        <br />=================== Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Laudantium, fugiat.
+        <br />============================...
+      </p>
+    </marquee>
+  </body>
+</html>
